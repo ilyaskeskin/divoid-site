@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Divoid</title>
+<meta name="description" content="Divoid: area-capture arcade game for Android">
+<style>
+:root { --bg:#0a0c16; --fg:#f4f1ea; --muted:#a4aac4; --line:#2a3150; --accent:#ffd23f; --panel:#141828; }
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) { --bg:#f6f5fb; --fg:#1c1f33; --muted:#555a78; --line:#dcd9ec; --accent:#9a6a00; --panel:#ffffff; } }
+body { background:var(--bg); color:var(--fg); font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; margin:0;
+  padding:32px max(16px,env(safe-area-inset-right,0px)) 56px max(16px,env(safe-area-inset-left,0px)); }
+main { max-width:680px; margin:0 auto; }
+h1 { font:900 clamp(28px,6vw,40px)/1.1 system-ui,sans-serif; margin:0; letter-spacing:1px; }
+header p { margin:6px 0 0; color:var(--muted); }
+.stripe { height:8px; margin:20px 0 28px; background:repeating-linear-gradient(90deg,var(--accent) 0 16px,transparent 16px 24px); }
+nav { display:flex; gap:10px; margin-bottom:24px; }
+nav a { font-weight:700; font-size:14px; color:var(--accent); text-decoration:none; border:1.5px solid var(--line); padding:4px 14px; }
+section { background:var(--panel); border:1px solid var(--line); padding:8px 22px 18px; margin-bottom:22px; }
+h2 { font:700 22px/1.25 system-ui,sans-serif; margin:18px 0 4px; }
+h3 { font:700 16px/1.3 system-ui,sans-serif; margin:20px 0 2px; color:var(--accent); }
+p, li { margin:6px 0; } ul { padding-left:20px; }
+.date { font-size:14px; color:var(--muted); }
+a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>DIVOID</h1>
+    <p>Cut the field, trap the boss. A 16-bit style area-capture arcade game for Android.</p>
+  </header>
+  <div class="stripe" aria-hidden="true"></div>
+  <section>
+    <h2>20 sectors, 20 bosses</h2>
+    <p>Fly along the border, hold to cut a line through open space, and close off 80% of each map. Every level has its own map and its own biomechanical boss. No account, no internet needed.</p>
+    <p><a href="privacy.html">Privacy policy / Gizlilik politikası</a></p>
+  </section>
+</main>
+</body>
+</html>
